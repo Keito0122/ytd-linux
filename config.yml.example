@@ -1,0 +1,13 @@
+# ytd Config
+# 保存場所: ~/.config/ytd/config.yml
+# コマンドライン引数 > Config > デフォルト値 の優先順位で適用されます。
+
+cookie: ~/Downloads/cookies.txt
+output: ~/Downloads
+format: mp4
+quality: best
+playlist: false
+embed_thumbnail: true
+embed_metadata: true
+filename_max_length: 120
+archive: true
