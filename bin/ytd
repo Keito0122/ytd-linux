@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# ytd 実行エントリー (Linux)
+# シンボリックリンク経由でも正しく本体を指せるよう readlink -f で実体パスを解決する。
+set -e
+SCRIPT_PATH="$(readlink -f "${BASH_SOURCE[0]}")"
+SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
+exec python3 "$SCRIPT_DIR/../com/keitodev/ytd/main.py" "$@"
